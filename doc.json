@@ -1,0 +1,11 @@
+{
+  "name": "Crasher",
+  "description": "Crashes and duplicates on reload",
+  "author": "technologenesis",
+  "config": {
+    "token": {
+      "description": "the token for the discord bot",
+      "type": "string"
+    }
+  }
+}
