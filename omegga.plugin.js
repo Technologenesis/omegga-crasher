@@ -13,6 +13,7 @@ class Crasher {
         this.omegga.on("cmd:crash", (name) => {
             this.omegga.whisper("About to crash plugin. On reload, an extra instance of the plugin should be running.");
 
+            // This particular problem only seems to happen when the error is encountered within an asynchronous callback
             setTimeout(() => {
                 undefined.access();
             }, 500);
